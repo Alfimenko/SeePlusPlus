@@ -32,19 +32,16 @@ int getNumber()
 string getOutput(int num)
 {
     int lastChar = num;
-    while (to_string(lastChar).length() > 2){lastChar=lastChar%10;}
+    lastChar=lastChar%100;
     if (lastChar == 11 || lastChar == 12 || lastChar == 13 || lastChar == 14) {return "яблок";}
     else {
+        lastChar = lastChar%10;
         switch (lastChar) {
             case 1: {
                 return "яблоко";
             }
-            case 2: {
-                return "яблока";
-            }
-            case 3: {
-                return "яблока";
-            }
+            case 2:
+            case 3:
             case 4: {
                 return "яблока";
             }
