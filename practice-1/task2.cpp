@@ -1,7 +1,3 @@
-//
-// Created by maxal on 21.02.2022.
-//
-
 #include <unistd.h>
 #include "iostream"
 
